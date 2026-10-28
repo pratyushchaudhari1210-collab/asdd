@@ -1,0 +1,8 @@
+#right after yml file#
+
+cd docker-practical
+docker compose up -d
+
+docker compose ps
+
+docker compose down
