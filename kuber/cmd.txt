@@ -1,0 +1,23 @@
+docker --version
+docker info
+dir
+docker build -t hellopy:0.1 .
+docker images
+docker run -d --name hellopy-test -p 30001:30001 hellopy:0.1
+docker ps
+#run the container from docker#
+kubectl get nodes
+kubectl apply -f pod.yaml
+kubectl get pods
+kubectl describe pod hellopy
+kubectl apply -f hellosvc.yaml
+kubectl get svc
+kubectl port-forward service/hellosvc 30002:30001
+http://127.0.0.1:30002
+
+
+kubectl get pods
+kubectl apply -f pod.yaml
+kubectl get svc
+kubectl apply -f hellosvc.yaml
+kubectl port-forward service/hellosvc 30002:30001
